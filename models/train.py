@@ -19,7 +19,7 @@ from utils.torch_utils_final import (
     InertialDataset,
 )
 from utils.os_utils import mkdir_if_missing
-from models.DeepConvLSTM_final import DeepConvLSTM
+from models.DeepConvLSTM import DeepConvLSTM
 from models.DeepConvCNN import DeepConvCNN
 from models.map_metric import ANETdetection
 
