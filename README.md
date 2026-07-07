@@ -1,4 +1,4 @@
-# Integrating Adaptive Sampling into Deep Learning-Based Human Activity Recognition
+# ContinuousConvLSTM: Integrating Adaptive Sampling into Deep Learning-Based Human Activity Recognition
 
 Code release for the paper *"Integrating Adaptive Sampling into Deep Learning-Based
 Human Activity Recognition"* (IWOAR 2026).
