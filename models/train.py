@@ -12,7 +12,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from utils.data_utils import convert_samples_to_segments, unwindow_inertial_data
-from utils.torch_utils_final import (
+from utils.torch_utils import (
     init_weights,
     save_checkpoint,
     worker_init_reset_seed,
@@ -248,7 +248,16 @@ def run_inertial_network(
         persistent_workers=persistent_workers,
     )
 
-    if cfg["name"] not in ("deepconvlstm", "deepconvcnn"):
+    # Paper-release model names.
+    # Architecture is selected by cfg["model"]["conv_type"] and cfg["model"]["temporal_head"].
+    supported_names = {
+        "deepconvlstm",
+        "continuousconvlstm",
+        "continuous_single",
+        "purecnn",
+        "deepconvcnn",
+    }
+    if cfg["name"] not in supported_names:
         raise ValueError(f"Unsupported model name '{cfg['name']}'")
 
     if cfg["name"] == "deepconvcnn":

@@ -87,7 +87,7 @@ training statistics only.
 Model variants are selected purely by config keys — `conv_type`
 (`standard`, `standard_multibranch`, `continuous`, `continuous_single`),
 `temporal_head` (`lstm`, `cnn`) and `multirate_training` — all handled by
-`models/DeepConvLSTM_final.py`. The continuous-kernel operator lives in
+`models/DeepConvLSTM.py`. The continuous-kernel operator lives in
 `models/continuous_conv.py`; its temporal support defaults to
 `conv_kernel_size / sampling_rate` (0.18 s for the 50 Hz datasets, 0.45 s for
 WISDM-watch), matching the paper.

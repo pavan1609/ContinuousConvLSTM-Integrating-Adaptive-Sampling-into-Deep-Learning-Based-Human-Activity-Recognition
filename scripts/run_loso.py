@@ -13,7 +13,7 @@ if _REPO_ROOT not in sys.path:
 
 from models.train import run_inertial_network
 from utils.os_utils import load_config
-from utils.torch_utils_final import fix_random_seed
+from utils.torch_utils import fix_random_seed
 
 
 def _build_labels_and_label_dict(anno: Dict, has_null: bool) -> Tuple[List[str], Dict[str, int]]:
