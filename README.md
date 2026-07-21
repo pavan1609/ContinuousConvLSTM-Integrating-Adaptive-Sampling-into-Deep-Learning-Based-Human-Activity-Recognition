@@ -1373,19 +1373,6 @@ file for each LOSO fold.
 
 ---
 
-## 24. Citation
-
-Please cite the accompanying paper when using this repository.
-
-```bibtex
-@inproceedings{chandankar2026continuousconvlstm,
-  title     = {Integrating Adaptive Sampling into Deep Learning-Based Human Activity Recognition},
-  author    = {Chandankar, Pavankumar and others},
-  booktitle = {Proceedings of the International Workshop on Sensor-Based Activity Recognition and Artificial Intelligence},
-  year      = {2026}
-}
-```
-
 Update the BibTeX entry with the final proceedings metadata when available.
 
 ---
